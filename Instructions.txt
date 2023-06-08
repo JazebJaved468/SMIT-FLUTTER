@@ -1,0 +1,17 @@
+Online Coding Platform for Dart: 
+dartpad.dev
+Wifi:
+Wifi name: Audistudent
+Password: saylani786
+
+Installations:
+•	Install VS code
+•	Install Flutter extension
+•	Install flutter from chrome and download the zip folder and extract in ‘C’ drive.
+After Extraction into C drive:
+Go to ‘bin’ folder, copy path, and go to environment variable and paste the path in user variables.
+To check that flutter is successfully installed in your machine:
+ Go to cmd, write flutter, if successfully installed then this ‘flutter’ command will run otherwise some error will be given.
+
+
+
