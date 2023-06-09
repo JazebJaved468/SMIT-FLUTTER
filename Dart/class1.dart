@@ -74,8 +74,8 @@ void main() {
   print (b); 
   
   //example_3
-  int a = 1;
-  num b = a; 
+  int c = 1;
+  num d = a; 
   print (b); 
 	  
   print(num1);
