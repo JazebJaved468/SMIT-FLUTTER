@@ -68,4 +68,26 @@ void main() {
   bool z = !(!o || e);
 
 
+  // conditions are based on bool
+  // if(){}---> keyword
+  // () ---> condition
+  // {} ---> statement
+  // else if(){} ---> keyword (can be more than 1)
+  // else{} ---> keyword
+  //If condition is true then (if) statements are executed
+  // if 1st condition is false then (else if) statement is executed
+  // If none of the condition is true then (else) statements are\ executed
+  // If any condition is true then none of the remaining else if and else will run
+
+  String email = 'abc@gmail.com';
+  String pswrd = 'abc';
+
+  if(email == 'abc@gmail.com' && pswrd == 'abc'){
+    print("Login Successful !!");
+  } 
+  else{
+    print("Login Failed !!");
+  }
+
+  print(19 == '19'); // false
 }
