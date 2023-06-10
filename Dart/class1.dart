@@ -8,8 +8,8 @@ void main() {
   
   // red underline is for error, program will not execute
   // blue, orange underlines are warnings, program will execute without any error.
-  
-  
+
+  // Ctrl + ? ---> comment out  
   
   //OUTPUT
 	//print is used for output the results
