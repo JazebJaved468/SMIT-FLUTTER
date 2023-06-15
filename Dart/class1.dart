@@ -10,6 +10,8 @@ void main() {
   // blue, orange underlines are warnings, program will execute without any error.
 
   // Ctrl + ? ---> comment out  
+
+  // on terminal ---> dart run <filename.dart>
   
   //OUTPUT
 	//print is used for output the results
