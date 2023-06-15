@@ -265,13 +265,4 @@ num centigrade = 35.5;
 num fahrenheit = (centigrade * (9/5)) + 32;
 print("Centigrade = $centigrade \nFahrenheit = $fahrenheit");
 
-
-
-
-
-
-
-
-
-
 }
