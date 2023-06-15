@@ -1,6 +1,6 @@
 
 import 'dart:io';
-
+import 'dart:math';
 
 void main(){
 // Question 1 
@@ -91,10 +91,173 @@ else{
 }
 
 // Question 7
+
+  stdout.write("Enter Customer ID: ");
+  String customer_id = stdin.readLineSync()!;
+  
+  stdout.write("Enter Customer Name: ");
+  int customer_name = int.parse(stdin.readLineSync()!);
+  
+  stdout.write("Enter no. of units used: ");
+  num units_used= int.parse(stdin.readLineSync()!);
+
+  num charges;
+  if(units_used < 200){
+    charges = 1.20;
+  }
+  else if(units_used >=200 && units_used < 400){
+    charges = 1.50;
+  }
+  else if(units_used >=400 && units_used < 600){
+    charges = 1.80;
+  }
+  else{
+    charges = 2.00;
+  }
+
+  num bill = units_used * charges;
+
+  // Output
+  print("\n|----------- ELECTRICITY BILL ------------|\n");
+  print("Customer IDNO: $customer_id");
+  print("Customer Name: $customer_name");
+  print("Unit Consumed: $units_used");
+  print("Amount Charges @Rs. $charges per unit : $bill");
+  print("Net Bill Amount : $bill");
+
+
+
+
 // Question 8
+
+// Get student details
+  stdout.write("Enter student name: ");
+  String name = stdin.readLineSync()!;
+  
+  stdout.write("Enter roll number: ");
+  int rollNumber = int.parse(stdin.readLineSync()!);
+  
+  stdout.write("Enter class: ");
+  String className = stdin.readLineSync()!;
+  
+  // Get marks for 5 subjects
+  stdout.write("Enter marks for Subject 1: ");
+  int subject1 = int.parse(stdin.readLineSync()!);
+  
+  stdout.write("Enter marks for Subject 2: ");
+  int subject2 = int.parse(stdin.readLineSync()!);
+  
+  stdout.write("Enter marks for Subject 3: ");
+  int subject3 = int.parse(stdin.readLineSync()!);
+  
+  stdout.write("Enter marks for Subject 4: ");
+  int subject4 = int.parse(stdin.readLineSync()!);
+  
+  stdout.write("Enter marks for Subject 5: ");
+  int subject5 = int.parse(stdin.readLineSync()!);
+  
+  // Calculate total marks and percentage
+  int totalMarks = subject1 + subject2 + subject3 + subject4 + subject5;
+  double percentage = (totalMarks / 500) * 100;
+  
+  // Determine grade based on percentage
+  String grade;
+  if (percentage >= 90) {
+    grade = "A+";
+  } else if (percentage >= 80) {
+    grade = "A";
+  } else if (percentage >= 70) {
+    grade = "B";
+  } else if (percentage >= 60) {
+    grade = "C";
+  } else if (percentage >= 50) {
+    grade = "D";
+  } else {
+    grade = "Fail";
+  }
+  
+  // Print marksheet
+  print("\n|----------- MARKSHEET------------|\n");
+  print("Student Name: $name");
+  print("Roll Number: $rollNumber");
+  print("Class: $className");
+  print("Total Marks: $totalMarks");
+  print("Percentage: ${percentage.toStringAsFixed(2)}%");
+  print("Grade Obtained: $grade");
+
+
 // Question 9
+
+int number = 4;
+if(number % 2 == 0){
+  print("$number is an even number and");
+  if(number % 5 == 0 ){
+  print("$number is divisible by 5");
+  }
+  else{
+    print("$number is not divisible by 5");
+  }
+}
+else{
+  print("$number is odd number and");
+  if(number % 7 == 0 ){
+  print("$number is divisible by 7");
+  }
+  else{
+    print("$number is not divisible by 7");
+  }
+}
+
 // Question 10
+
+stdout.write("Enter first number : ");
+num num1 = int.parse(stdin.readLineSync()!);
+
+stdout.write("Enter first number : ");
+num num2 = int.parse(stdin.readLineSync()!);
+
+stdout.write("Enter first number : ");
+num num3 = int.parse(stdin.readLineSync()!);
+
+num greatest;
+num lowest;
+
+if(num1 > num2 && num1 > num3){
+  greatest = num1;
+  if(num2 > num3){
+    lowest = num3;
+  }
+  else{
+    lowest = num2;
+  }
+}
+else if(num2 > num1 && num2 > num3){
+  greatest = num2;
+  if(num1 > num3){
+    lowest = num3;
+  }
+  else{
+    lowest = num1;
+  }
+}
+else{
+  greatest = num3;
+  if(num1 > num2){
+    lowest = num2;
+  }
+  else{
+    lowest = num1;
+  }
+}
+
+print("Gretest = $greatest \nLowest = $lowest");
+
 // Question 11
+
+num x = 16;
+num root = pow(x, 1/2);
+print("Root of $x is $root");
+
 
 // Question 12
 
