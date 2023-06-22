@@ -1,6 +1,6 @@
 import 'dart:core';
 
-void main(){
+void main() {
   /* nested if else ---> can be used to check why login is failed, is it because of email or password
 
 
@@ -15,10 +15,10 @@ void main(){
   indexing starts from 0
   length = last_index - 1;
     */
-  
-  var l = [];  // empty list
+
+  var l = []; // empty list
   // list can have multiple datatypes using 'var'
-  var studentNames = ["Jazeb", "Zohaib", "Bilal", "Usama"]; 
+  var studentNames = ["Jazeb", "Zohaib", "Bilal", "Usama"];
   print(studentNames);
   print(studentNames[0]);
   print(studentNames[1]);
@@ -33,7 +33,7 @@ void main(){
   print(teachersNames[2]);
 
   // list with only string elements
-    List<String> tNames = ["Jazeb", "Zohaib", "Bilal"];
+  List<String> tNames = ["Jazeb", "Zohaib", "Bilal"];
   print(tNames);
   print(tNames[0]);
   print(tNames[1]);
@@ -43,24 +43,24 @@ void main(){
   print(studentNames.length);
   print(studentNames[1]);
   print(studentNames.elementAt(1));
-  
+
   // Updating list items
   studentNames[1] = "Ali";
   print(studentNames[1]);
 
   // replacement --> takeslist
   // end se pehley wale index tk replace hoga
-    print(studentNames);
+  print(studentNames);
   studentNames.replaceRange(1, 3, ["heelo", 'world']);
 
   // sort ---> ascending or descending
   // alphabetical order ---> if strings
   // ascending order ---> if integers
 
-    print(studentNames);
-    // print(studentNames.sort());
-    print(studentNames.isEmpty);
-    print(studentNames.isEmpty);
+  print(studentNames);
+  // print(studentNames.sort());
+  print(studentNames.isEmpty);
+  print(studentNames.isEmpty);
 
   // . isEmpty
   // .add   ---> at end
@@ -74,9 +74,11 @@ void main(){
   // .reverse ----> changes type from list to iterables datatype
   // List.of ---> to typecast data into lists
 
-  var a = ['a', 'b','c'];
-  var rev = a.reversed;
-  print(rev);
-  print(List.of(rev))
+  // Explore other methods tooooooooo
 
+  var a = ['a', 'b', 'c'];
+  var rev = a.reversed;
+  
+  print(rev);
+  print(List.of(rev));
 }
