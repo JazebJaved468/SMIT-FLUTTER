@@ -68,7 +68,7 @@ print(sRecords["gender"]);
 
 
 // To merge maps
-// cascade operatoe ----> ..
+// cascade operator ----> ..
 // spread operator ---> ...
 
 
