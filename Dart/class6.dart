@@ -26,7 +26,7 @@ void main() {
   print(number * 2);
   print(number * 3);
 
-  // for loops runs on given range
+  // for loops runs on given range (for range loop)
   for (var i = 1; i <= 10; i++) {
     result = number * i;
     print("$number x $i = $result");
