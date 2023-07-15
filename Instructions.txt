@@ -3,6 +3,7 @@ dartpad.dev
 Wifi:
 Wifi name: Audistudent
 Password: saylani786
+Updated Password: saylani12
 
 Installations:
 •	Install VS code
